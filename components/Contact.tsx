@@ -12,7 +12,7 @@ const Contact = () => {
     };
     return (
             <section
-                className=" z-30 max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black mb-28"
+                className="  max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black mb-28"
                 id='contact'>
 
                 <p className="text-neutral-600 text-lg text-center font-bold max-w-sm mt-2 dark:text-neutral-300">

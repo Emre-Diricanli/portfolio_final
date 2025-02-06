@@ -55,19 +55,19 @@ const  Dock = () => {
             icon: (
                 <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://github.com/Emre-Diricanli?tab=repositories",
         },
         {
             title: "LinkedIn",
             icon: (
                 <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "https://www.linkedin.com/in/emre-diricanli/",
         },
 
     ];
     return (
-        <div className="flex fixed z-50 bottom-8 items-end lg:justify-center md:justify-end justify-end h-screen w-full md:pr-5 pr-5 ">
+        <div className="flex fixed bottom-8 items-end lg:justify-center md:justify-end justify-end h-screen w-full md:pr-5 pr-5 ">
             <FloatingDock
                 // mobileClassName="translate-y-20" // only for demo, remove for production
                 items={links}
