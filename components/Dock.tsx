@@ -67,7 +67,7 @@ const  Dock = () => {
 
     ];
     return (
-        <div className="flex fixed bottom-8 items-end lg:justify-center md:justify-end justify-end h-screen w-full md:pr-5 pr-5 ">
+        <div className="flex  fixed bottom-8 items-end lg:justify-center md:justify-end justify-end h-screen w-full md:pr-5 pr-5 ">
             <FloatingDock
                 // mobileClassName="translate-y-20" // only for demo, remove for production
                 items={links}

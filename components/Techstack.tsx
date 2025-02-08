@@ -3,8 +3,8 @@ import {AnimatedBeamDemo} from "@/components/ui/techstack";
 
 const Techstack = () => {
     return (
-        <section className="py-20 w-full" id='techstack'>
-            <div className="max-w-7xl mx-auto  text-center">
+        <section className="py-10 pb-5 w-full" id='techstack'>
+            <div className="max-w-7xl mx-auto  text-center pb-6">
                 <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans pb-5">
                     Tech Stack
                 </h2>

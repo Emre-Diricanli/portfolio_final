@@ -1,13 +1,14 @@
 "use client";
 import WorldMap from "@/components/ui/world-map";
+import React from "react";
 
 const Availability = () =>{
     return (
         <section className=" py-20  w-full" id='availability'>
             <div className="max-w-7xl mx-auto  text-center">
-                <p className="font-bold text-xl md:text-4xl dark:text-white text-black">
+                <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans pb-5">
                     Availability
-                </p>
+                </h2>
                 <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
                     I am based in Atlanta, GA, USA, I embrace the flexibility of remote work
                     and thrive in collaborative digital environments. Whether it&apos;s contributing to a startup’s growth
