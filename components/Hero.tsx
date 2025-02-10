@@ -10,18 +10,21 @@ const Hero = () => {
         offset: ["start start", "end start"],
     });
 
-    const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
-    const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
-    const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
-    const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+    const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.0, 1.2]);
+    const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.0, 1.2]);
+    const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.0, 1.2]);
+    const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.0, 1.2]);
     const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
 
     return (
         <div
-            className="h-[200vh]  w-full rounded-md relative pt-15 overflow-clip"
+            className="h-[200vh] w-full rounded-md relative pt-15 overflow-clip"
             ref={ref}
         >
             <GoogleGeminiEffect
+                title={"Emre Diricanli"}
+                description={"Bridging code and cloud to deliver seamless solutions."}
+                className={"w-screen"}
                 pathLengths={[
                     pathLengthFirst,
                     pathLengthSecond,

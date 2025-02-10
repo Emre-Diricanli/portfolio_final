@@ -9,12 +9,14 @@ const About = () => {
     ));
 
     return (
-        <div className="w-full h-full py-20">
+        <section className="w-full relative z-0 h-full py-20" id={"about"}>
             <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
                 About Me
             </h2>
-                <Carousel items={cards} />
-        </div>
+            <div>
+                <Carousel items={cards}  />
+            </div>
+        </section>
     );
 }
 export default About;
@@ -58,28 +60,28 @@ const data = [
         content: <DummyContent />,
     },
     {
-        category: "Productivity",
-        title: "Enhance your productivity.",
+        category: "Education",
+        title: "School History",
         src: "/assets/graduation.jpeg",
         content: <DummyContent />,
     },
     {
-        category: "Product",
-        title: "Launching the new Apple Vision Pro.",
+        category: "Passion",
+        title: "Love for Engineering",
         src: "/assets/carwoglasses.jpeg",
         content: <DummyContent />,
     },
 
     {
-        category: "Product",
-        title: "Maps for your iPhone 15 Pro Max.",
+        category: "Hobbies",
+        title: "More than just an engineer",
         src: "/assets/austin.jpeg",
         content: <DummyContent />,
     },
     {
-        category: "iOS",
-        title: "Photography just got better.",
-        src: "/assets/Job.jpeg",
+        category: "Future",
+        title: "Future Aspirations",
+        src: "/assets/austin.jpeg",
         content: <DummyContent />,
     },
     {
