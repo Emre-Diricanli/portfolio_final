@@ -77,7 +77,7 @@ export function ExpandableCardDemo() {
                                     height={2500}
                                     src={active.src}
                                     alt={active.title}
-                                    className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                                    className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-top object-contain"
                                 />
                             </motion.div>
 
@@ -116,7 +116,7 @@ export function ExpandableCardDemo() {
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: 1 }}
                                         exit={{ opacity: 0 }}
-                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                                        className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                                     >
                                         {typeof active.content === "function"
                                             ? active.content()
@@ -143,7 +143,7 @@ export function ExpandableCardDemo() {
                                     height={900}
                                     src={card.src}
                                     alt={card.title}
-                                    className="h-60 w-full rounded-xl object-cover object-top"
+                                    className="h-60 w-full rounded-xl object-contain object-top"
                                 />
                             </motion.div>
                             <div className="flex justify-center items-center flex-col">
@@ -203,20 +203,20 @@ export const CloseIcon = () => {
 
 const cards = [
     {
-        description: "Google Drive Clone",
-        title: "Store It",
-        src: "/assets/file.png",
+        description: "My Web Development Company",
+        title: "Alpha Data Tech",
+        src: "/assets/AlphaDataTech.png",
         ctaText: "Check out the source code",
         ctaLink: "https://github.com/Emre-Diricanli/StorageManagementSolution",
         content: () => {
             return (
                 <>
                     <p>
-                        Experience a powerful, user-friendly platform featuring secure Appwrite-based signup, login, and logout, along with seamless file uploads, viewing, and sharing. Stay organized with renaming, deleting, sorting, and global search capabilities, all while enjoying a clean, responsive design. The dynamic dashboard provides storage insights, recent uploads, and file summaries, while leveraging the latest React 19, Next.js 15, and modern code architecture for optimal performance and reusability.
-                    </p>
+                        Alpha Data Tech LLC is a Georgia-based web development and IT solutions company dedicated to providing high-quality, customized digital services at competitive prices. Specializing in website design, online development, and a variety of tech solutions, Alpha Data Tech helps businesses build their online presence and streamline operations through innovative technology and personalized support.                    </p>
                 </>
             );
         },
+
     },
     {
         description: "Full Stack Business Ledger App",
@@ -256,24 +256,18 @@ const cards = [
         },
     },
     {
-        description: "Lord Himesh",
-        title: "Aap Ka Suroor",
-        src: "/assets/austin.jpeg",
-        ctaText: "Visit",
-        ctaLink: "https://ui.aceternity.com/templates",
+        description: "Google Drive Clone",
+        title: "Store It",
+        src: "/assets/file.png",
+        ctaText: "Check out the source code",
+        ctaLink: "https://github.com/Emre-Diricanli/StorageManagementSolution",
         content: () => {
             return (
-                <p>
-                    Himesh Reshammiya, a renowned Indian music composer, singer, and
-                    actor, is celebrated for his distinctive voice and innovative
-                    compositions. Born in Mumbai, India, he has become a prominent figure
-                    in the Bollywood music industry. <br /> <br /> His songs often feature
-                    a blend of contemporary and traditional Indian music, capturing the
-                    essence of modern Bollywood soundtracks. With a career spanning over
-                    two decades, Himesh Reshammiya has released numerous hit albums and
-                    singles that have garnered him a massive fan following both in India
-                    and abroad.
-                </p>
+                <>
+                    <p>
+                        Experience a powerful, user-friendly platform featuring secure Appwrite-based signup, login, and logout, along with seamless file uploads, viewing, and sharing. Stay organized with renaming, deleting, sorting, and global search capabilities, all while enjoying a clean, responsive design. The dynamic dashboard provides storage insights, recent uploads, and file summaries, while leveraging the latest React 19, Next.js 15, and modern code architecture for optimal performance and reusability.
+                    </p>
+                </>
             );
         },
     },

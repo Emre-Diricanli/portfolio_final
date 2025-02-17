@@ -18,10 +18,10 @@ const Techstack = () => {
             </p>
             </div>
             <div className='flex lg:flex-row flex-col justify-center h-auto items-center px-24'>
-                <div className='flex justify-center items-center h-auto w-full'>
+                <div className='flex justify-center items-center h-auto w-screen'>
                     <FileTree />
                 </div>
-                <div className='flex relative -z-10 w-full items-center justify-center'>
+                <div className='flex relative -z-10 w-screen px-2 items-center justify-center'>
                     <AnimatedBeamDemo/>
                 </div>
             </div>

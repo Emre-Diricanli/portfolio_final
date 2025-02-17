@@ -2,7 +2,7 @@ import { File, Folder, Tree } from "./file-tree";
 
 export function FileTree() {
     return (
-        <div className="relative flex h-auto w-1/2 flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
+        <div className="relative flex h-auto w-1/2 flex-col items-center justify-center overflow-hidden rounded-lg ">
             <Tree
                 className="overflow-hidden rounded-md p-2"
                 initialSelectedId="7"
@@ -71,7 +71,7 @@ export function FileTree() {
                             <p>Next.JS</p>
                         </File>
                         <File value="17" className='text-lg'>
-                            <p>React Native</p>
+                            <p>Spring Boot</p>
                         </File>
                         <File value="18" className='text-lg'>
                             <p>Node.JS</p>
