@@ -234,7 +234,7 @@ const cards = [
     },
 
     {
-        description: "Web based senior project judging app",
+        description: "Web based project judging app",
         title: "Owl Judge",
         src: "/assets/owljudge.png",
         ctaText: "Check out the source code",
