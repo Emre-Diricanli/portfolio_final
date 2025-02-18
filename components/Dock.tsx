@@ -8,7 +8,7 @@ import {
     IconHome,
 
 } from "@tabler/icons-react";
-import {CircleUserRound, Cpu, Globe, Phone} from "lucide-react"
+import {CircleUserRound, Cpu, Globe, Phone, FolderGit2} from "lucide-react"
 
 
 const  Dock = () => {
@@ -26,7 +26,7 @@ const  Dock = () => {
             icon: (
                 <CircleUserRound className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
-            href: "#",
+            href: "#about",
         },
         {
             title: "Tech Stack",
@@ -34,6 +34,13 @@ const  Dock = () => {
                 <Cpu className="h-full w-full text-neutral-500 dark:text-neutral-300" />
             ),
             href: "#techstack",
+        },
+        {
+            title: "Projects",
+            icon: (
+                <FolderGit2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+            ),
+            href: "#projects",
         },
         {
             title: "Availability",

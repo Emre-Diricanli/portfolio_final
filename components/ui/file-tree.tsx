@@ -191,7 +191,7 @@ const TreeIndicator = forwardRef<
       dir={direction}
       ref={ref}
       className={cn(
-        "absolute left-1.5 h-full w-px rounded-md bg-muted py-3 duration-300 ease-in-out hover:bg-slate-300 rtl:right-1.5",
+        "absolute left-1.5 h-full w-px rounded-md bg-muted py-3 duration-500 ease-in-out bg-slate-500 rtl:right-1.5",
         className,
       )}
       {...props}
@@ -314,7 +314,7 @@ const File = forwardRef<
         type="button"
         disabled={!isSelectable}
         className={cn(
-          "flex w-fit items-center gap-1 rounded-md pr-1 text-sm duration-200 ease-in-out rtl:pl-1 rtl:pr-0",
+          "flex w-fit items-center gap-1 rounded-md pr-1 text-sm duration-500 ease-in-out rtl:pl-1 rtl:pr-0",
           {
             "bg-muted": isSelected && isSelectable,
           },
