@@ -7,7 +7,7 @@ const Techstack = () => {
   return (
     <section className="py-10 relative pb-5 w-full" id="techstack">
       <div className="max-w-7xl mx-auto relative -z-10 text-center pb-6">
-        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold font-sans pb-5">
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans pb-5">
           Tech Stack
         </h2>
         <p className="text-sm md:text-lg text-neutral-300 max-w-2xl mx-auto pb-4">

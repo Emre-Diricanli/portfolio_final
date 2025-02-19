@@ -9,7 +9,7 @@ const Hero = () => {
         <p className="z-10 whitespace-pre-wrap text-center lg:text-8xl text-4xl font-bold tracking-tighter text-white">
           Emre Diricanlı
         </p>
-        <p className="lg:text-3xl font-semibold text-center text-lg">
+        <p className="lg:text-3xl font-semibold text-center text-lg text-white">
           Bridging code and cloud to deliver seamless solutions.
         </p>
         <Ripple mainCircleOpacity={0.8} mainCircleSize={80} numCircles={8} />

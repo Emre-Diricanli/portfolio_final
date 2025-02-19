@@ -28,50 +28,62 @@ export function FileTree() {
         ]}
         elements={ELEMENTS}
       >
-        <Folder element="Tech Stack" value="1" className="text-lg">
-          <Folder value="2" element="Languages" className="text-lg">
-            <File value="3" className="text-lg">
+        <Folder element="Tech Stack" value="1" className="text-lg text-white">
+          <Folder value="2" element="Languages" className="text-lg text-white">
+            <File value="3" className="text-lg text-white">
               <p>Java</p>
             </File>
-            <File value="4" className="text-lg">
+            <File value="4" className="text-lg text-white">
               <p>TypeScript</p>
             </File>
-            <File value="5" className="text-lg">
+            <File value="5" className="text-lg text-white">
               <p>JavaScript</p>
             </File>
-            <File value="6" className="text-lg">
+            <File value="6" className="text-lg text-white">
               <p>Python</p>
             </File>
           </Folder>
-          <Folder value="7" element="Technologies" className="text-lg">
-            <Folder value="8" element="Database" className="text-lg">
-              <File value="9" className="text-lg">
+          <Folder
+            value="7"
+            element="Technologies"
+            className="text-lg text-white"
+          >
+            <Folder value="8" element="Database" className="text-lg text-white">
+              <File value="9" className="text-lg text-white">
                 <p>PostgreSQL</p>
               </File>
             </Folder>
-            <Folder value="10" element="Containerization" className="text-lg">
-              <File value="11" className="text-lg">
+            <Folder
+              value="10"
+              element="Containerization"
+              className="text-lg text-white"
+            >
+              <File value="11" className="text-lg text-white">
                 <p>Kubernetes</p>
               </File>
-              <File value="12" className="text-lg">
+              <File value="12" className="text-lg text-white">
                 <p>Docker</p>
               </File>
             </Folder>
-            <File value="13" className="text-lg">
+            <File value="13" className="text-lg text-white">
               <p>Github</p>
             </File>
-            <File value="14" className="text-lg">
+            <File value="14" className="text-lg text-white">
               <p>Jenkins</p>
             </File>
           </Folder>
-          <Folder value="15" element="Frameworks" className="text-lg">
-            <File value="16" className="text-lg">
+          <Folder
+            value="15"
+            element="Frameworks"
+            className="text-lg text-white"
+          >
+            <File value="16" className="text-lg text-white">
               <p>Next.JS</p>
             </File>
-            <File value="17" className="text-lg">
+            <File value="17" className="text-lg text-white">
               <p>Spring Boot</p>
             </File>
-            <File value="18" className="text-lg">
+            <File value="18" className="text-lg text-white">
               <p>Node.JS</p>
             </File>
           </Folder>
