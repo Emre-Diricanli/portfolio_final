@@ -216,7 +216,7 @@ export function TechBeam() {
                 toRef={div4Ref}
                 curvature={-75}
                 endYOffset={-10}
-                reverse
+                // reverse
             />
             <AnimatedBeam
                 containerRef={containerRef}
@@ -224,7 +224,7 @@ export function TechBeam() {
                 toRef={div4Ref}
                 curvature={75}
                 endYOffset={10}
-                reverse
+                // reverse
             />
             <AnimatedBeam
                 containerRef={containerRef}
