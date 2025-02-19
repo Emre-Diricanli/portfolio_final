@@ -9,7 +9,9 @@ const Projects = () => {
                     Projects
                 </h2>
             </div>
+            <div>
             <ExpandableCardDemo />
+            </div>
         </section>
     )
 }

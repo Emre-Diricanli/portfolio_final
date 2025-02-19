@@ -5,7 +5,6 @@ import About from "@/components/About";
 import Techstack from "@/components/Techstack";
 import Availability from "@/components/Availability";
 import Contact from "@/components/Contact";
-import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 
 
@@ -17,7 +16,6 @@ export default function Home() {
         <Hero />
         <About />
         <Techstack />
-        {/*<Experience />*/}
         <Projects />
         <Availability />
         <Contact />

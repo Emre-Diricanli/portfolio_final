@@ -28,6 +28,7 @@ export function ExpandableCardDemo() {
         return () => window.removeEventListener("keydown", onKeyDown);
     }, [active]);
 
+    // @ts-ignore
     useOutsideClick(ref, () => setActive(null));
 
     return (
@@ -40,7 +41,9 @@ export function ExpandableCardDemo() {
                         exit={{ opacity: 0 }}
                         className="fixed inset-0 bg-black/20 h-full w-full z-10"
                     />
+
                 )}
+
             </AnimatePresence>
             <AnimatePresence>
                 {active && typeof active === "object" ? (
@@ -70,6 +73,7 @@ export function ExpandableCardDemo() {
                             ref={ref}
                             className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
                         >
+
                             <motion.div layoutId={`image-${active.title}-${id}`}>
                                 <Image
                                     priority
@@ -84,6 +88,7 @@ export function ExpandableCardDemo() {
                             <div>
                                 <div className="flex justify-between items-start p-4">
                                     <div className="">
+
                                         <motion.h3
                                             layoutId={`title-${active.title}-${id}`}
                                             className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
@@ -96,6 +101,7 @@ export function ExpandableCardDemo() {
                                         >
                                             {active.description}
                                         </motion.p>
+
                                     </div>
 
                                     <motion.a
@@ -111,6 +117,7 @@ export function ExpandableCardDemo() {
                                     </motion.a>
                                 </div>
                                 <div className="pt-4 relative px-4">
+
                                     <motion.div
                                         layout
                                         initial={{ opacity: 0 }}
@@ -121,14 +128,22 @@ export function ExpandableCardDemo() {
                                         {typeof active.content === "function"
                                             ? active.content()
                                             : active.content}
+
                                     </motion.div>
+
                                 </div>
+
                             </div>
                         </motion.div>
+
                     </div>
+
                 ) : null}
             </AnimatePresence>
+
+
             <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+
                 {cards.map((card, index) => (
                     <motion.div
                         layoutId={`card-${card.title}-${id}`}
@@ -159,7 +174,9 @@ export function ExpandableCardDemo() {
                                 >
                                     {card.description}
                                 </motion.p>
+
                             </div>
+
                         </div>
                     </motion.div>
                 ))}
@@ -197,7 +214,9 @@ export const CloseIcon = () => {
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M18 6l-12 12" />
             <path d="M6 6l12 12" />
+
         </motion.svg>
+
     );
 };
 

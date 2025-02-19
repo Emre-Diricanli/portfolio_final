@@ -1,11 +1,11 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 const About = () => {
     const cards = data.map((card, index) => (
         <Card key={card.src} card={card} index={index} />
+
     ));
 
     return (
@@ -16,6 +16,7 @@ const About = () => {
             <div>
                 <Carousel items={cards}  />
             </div>
+
         </section>
     );
 }
@@ -40,13 +41,7 @@ const About_Me = () => {
                 I thrive on challenges, enjoy collaborating with diverse teams, and am excited about the endless possibilities that technology offers. Let’s connect and build something amazing together!
                 </p>
             </div>
-            {/*<Image*/}
-            {/*    src="/assets/texas.jpeg"*/}
-            {/*    alt="Macbook mockup from Aceternity UI"*/}
-            {/*    height="500"*/}
-            {/*    width="500"*/}
-            {/*    className="md:w-1/2 md:h-1/2 h-full w-full mx-auto rounded-lg object-contain"*/}
-            {/*/>*/}
+
         </div>
     );
 };

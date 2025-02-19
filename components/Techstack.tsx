@@ -5,7 +5,7 @@ import {FileTree} from "@/components/ui/teckstackfiles";
 const Techstack = () => {
     return (
         <section className="py-10 relative  pb-5 w-full" id='techstack'>
-            <div className="max-w-7xl mx-auto  text-center pb-6">
+            <div className="max-w-7xl mx-auto relative -z-10 text-center pb-6">
                 <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold font-sans pb-5">
                     Tech Stack
                 </h2>
@@ -19,7 +19,7 @@ const Techstack = () => {
 
             </p>
             </div>
-            <div className='flex lg:flex-row flex-col justify-center h-auto items-center px-24'>
+            <div className='flex lg:flex-row relative -z-10 flex-col justify-center h-auto items-center px-24'>
                 <div className='flex justify-center items-center h-auto w-screen'>
                     <FileTree />
                 </div>
