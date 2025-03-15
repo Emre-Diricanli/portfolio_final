@@ -4,7 +4,7 @@ import React, {
   useRef,
   useState,
   createContext,
-  useContext,
+  useContext, JSX,
 } from "react";
 import {
   IconArrowNarrowLeft,
@@ -164,7 +164,7 @@ export const Card = ({
 }) => {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const { onCardClose, currentIndex } = useContext(CarouselContext);
+  const { onCardClose} = useContext(CarouselContext);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -183,6 +183,7 @@ export const Card = ({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
+  // @ts-ignore
   useOutsideClick(containerRef, () => handleClose());
 
   const handleOpen = () => {

@@ -154,11 +154,13 @@ export function ExpandableCardDemo() {
                         <div className="flex gap-4 flex-col  w-full">
                             <motion.div layoutId={`image-${card.title}-${id}`}>
                                 <Image
-                                    width={900}
-                                    height={900}
                                     src={card.src}
                                     alt={card.title}
+                                    width={900}
+                                    height={900}
                                     className="h-60 w-full rounded-xl object-contain object-top"
+                                    loading="lazy"
+                                    quality={80}
                                 />
                             </motion.div>
                             <div className="flex justify-center items-center flex-col">
