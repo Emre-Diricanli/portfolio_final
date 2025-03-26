@@ -191,7 +191,7 @@ const TechStack = () => {
 
                     <div className="relative">
                         {/* Timeline line */}
-                        <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-white/50 to-white/5 transform md:translate-x-0"></div>
+                        <div className="absolute hidden sm:block left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-white/50 to-white/5 transform -translate-x-1/2"></div>
 
                         <div className="space-y-12">
                             <TimelineItem
