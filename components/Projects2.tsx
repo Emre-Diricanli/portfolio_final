@@ -26,8 +26,8 @@ const projects: Project[] = [
         longDescription: "Alpha Data Tech LLC is a Georgia-based web development and IT solutions company dedicated to providing high-quality, customized digital services at competitive prices. Specializing in website design, online development, and a variety of tech solutions, Alpha Data Tech helps businesses build their online presence and streamline operations through innovative technology and personalized support.",
         image: "/assets/AlphaDataTech.png",
         technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-        githubLink: "https://github.com/Emre-Diricanli/StorageManagementSolution",
-        liveLink: "https://example.com",
+        githubLink: "https://github.com/Emre-Diricanli/alpha_data_tech_saas",
+        liveLink: "https://master.d34rv1vum3rnjj.amplifyapp.com/",
         category: "web"
     },
     {
@@ -36,7 +36,7 @@ const projects: Project[] = [
         description: "Full Stack Business Ledger App",
         longDescription: "LedgerLink Pro is a cutting-edge, web-based accounting and finance management software designed to revolutionize the way businesses handle their financial transactions and reporting. This innovative platform provides a comprehensive suite of tools that cater to the intricate needs of modern accounting, blending user-friendly design with robust functionality.",
         image: "/assets/LedgerLinkPro.png",
-        technologies: ["Node.js", "MongoDB", "Express", "React"],
+        technologies: ["React", "Docker", "C#", "TypeScript"],
         githubLink: "https://github.com/Emre-Diricanli/LedgerLink-Pro",
         category: "fullstack"
     },
@@ -46,9 +46,9 @@ const projects: Project[] = [
         description: "Web based project judging app",
         longDescription: "Owl Judge is a sophisticated web application developed to streamline the process of project evaluation in academic and professional settings. This platform enables judges to efficiently review and score submissions using customizable rubrics, while providing participants with transparent feedback. The intuitive interface supports a variety of project types and evaluation formats, making it adaptable to different contexts from hackathons to semester projects.",
         image: "/assets/owljudge.png",
-        technologies: ["JavaScript", "CSS", "HTML", "Firebase"],
+        technologies: ["JavaScript", "CSS", "HTML", ".NET"],
         githubLink: "https://github.com/Haktan8/Owl-Judge",
-        category: "web"
+        category: "fullstack"
     },
     {
         id: 4,
@@ -56,8 +56,40 @@ const projects: Project[] = [
         description: "Google Drive Clone",
         longDescription: "Experience a powerful, user-friendly platform featuring secure Appwrite-based signup, login, and logout, along with seamless file uploads, viewing, and sharing. Stay organized with renaming, deleting, sorting, and global search capabilities, all while enjoying a clean, responsive design. The dynamic dashboard provides storage insights, recent uploads, and file summaries, while leveraging the latest React 19, Next.js 15, and modern code architecture for optimal performance and reusability.",
         image: "/assets/file.png",
-        technologies: ["React", "Firebase", "Cloud Storage"],
+        technologies: ["Next.js", "AppWrite", "Cloud Storage"],
         githubLink: "https://github.com/Emre-Diricanli/StorageManagementSolution",
+        category: "fullstack"
+    },
+    {
+        id: 5,
+        title: "Metro Private Securities",
+        description: "Local Security Agency Website",
+        longDescription: "Metro Private Securities is a professional security company providing comprehensive protection services, including armed and unarmed guards, surveillance monitoring, and personal security, delivered by highly trained professionals committed to ensuring client safety and peace of mind.",
+        image: "/assets/mps.png",
+        technologies: ["Next.js", "TypeScript", "TailwindCSS"],
+        githubLink: "https://github.com/Emre-Diricanli/mps",
+        liveLink: "https://mps-drab.vercel.app/",
+        category: "web"
+    },
+    {
+        id: 6,
+        title: "Restate",
+        description: "Zillow Clone",
+        longDescription: "Metro Private Securities is a professional security company providing comprehensive protection services, including armed and unarmed guards, surveillance monitoring, and personal security, delivered by highly trained professionals committed to ensuring client safety and peace of mind.",
+        image: "/assets/restate.png",
+        technologies: ["Expo", "AppWrite", "TypeScript", "TailwindCSS"],
+        githubLink: "https://github.com/adrianhajdin/react_native-restate/blob/main/README.md",
+        category: "mobile"
+    },
+    {
+        id: 7,
+        title: "DreamScape",
+        description: "AI Dream Interpreter",
+        longDescription: "This app is a dream interpreter that analyzes descriptions of your dreams, identifies common symbols like \"flying\" or \"water,\" and provides psychological interpretations of what these symbols might mean. It saves your dream history locally so you can review past interpretations, and includes a dark/light mode toggle.",
+        image: "/assets/dreamscape.png",
+        technologies: ["Next.Js", "Supabase", "TypeScript", "TailwindCSS", "OpenAI API"],
+        githubLink: "https://github.com/Emre-Diricanli/Dreamy2",
+        liveLink: "https://dreamy-alpha.vercel.app",
         category: "fullstack"
     }
 ];
@@ -127,7 +159,7 @@ const Projects2 = () => {
                                         src={project.image}
                                         alt={project.title}
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                                     <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -200,7 +232,7 @@ const Projects2 = () => {
                                         src={selectedProject.image}
                                         alt={selectedProject.title}
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                     />
                                     <button
                                         className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 p-2 rounded-full text-white transition-colors"

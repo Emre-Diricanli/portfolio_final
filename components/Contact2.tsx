@@ -69,10 +69,10 @@ const Contact = () => {
     };
 
     return (
-        <section className="pb-32 bg-black relative" id="contact">
+        <section className="pb-32 mt-8 bg-black relative" id="contact">
             {/* Background elements */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute h-96 w-96 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-3xl -top-20 -right-20"></div>
+                <div className="absolute mt-28 h-96 w-96 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 blur-3xl -top-20 -right-20"></div>
                 <div className="absolute h-96 w-96 rounded-full bg-gradient-to-r from-blue-600/20 to-cyan-600/20 blur-3xl -bottom-20 -left-20"></div>
             </div>
 

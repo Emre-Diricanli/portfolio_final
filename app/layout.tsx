@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import ScrollToTop from "@/components/ui/ScrollToTop";
+import Dock from "@/components/Dock";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -42,8 +43,8 @@ export default function RootLayout({
       >
       <ScrollToTop/>
         <GoogleAnalytics gaId="G-W9G8NWNXWY" />
-
         {children}
+      <Dock />
       </body>
     </html>
   );
