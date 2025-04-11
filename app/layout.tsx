@@ -1,9 +1,14 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import dynamic from "next/dynamic";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import ScrollToTop from "@/components/ui/ScrollToTop";
-import Dock from "@/components/Dock";
+
+// Dynamically import non-critical components
+// const ScrollToTop = dynamic(() => import("@/components/ui/ScrollToTop"), { ssr: false });
+const Dock = dynamic(() => import("@/components/Dock"), { ssr: true });
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -42,7 +47,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <ScrollToTop/>
-        <GoogleAnalytics gaId="G-W9G8NWNXWY" />
+        <GoogleAnalytics gaId="G-W9G8NWNXWY" strategy="afterInteractive" />
         {children}
       <Dock />
       </body>

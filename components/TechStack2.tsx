@@ -1,32 +1,35 @@
 "use client";
 import React, {JSX, useState} from "react";
 import { motion } from "framer-motion";
-import { Icons } from "@/components/icons"; // Make sure this path is correct
+import StackIcon from "tech-stack-icons";
+// import { Icons } from "@/components/icons"; // Make sure this path is correct
 
 // Tech categories and icons
 const technologies = {
     languages: [
         {
             name: "JavaScript",
-            icon: <Icons.javascript />,
+            icon: <StackIcon name="js" />,
             level: 90,
             color: "#F7DF1E"
         },
         {
             name: "TypeScript",
-            icon: <Icons.typescript />,
+            icon: <StackIcon name="typescript" />
+            ,
             level: 85,
             color: "#3178C6"
         },
         {
             name: "Java",
-            icon: <Icons.java />,
+            icon: <StackIcon name="java" />
+            ,
             level: 70,
             color: "#007396"
         },
         {
             name: "Python",
-            icon: <Icons.python />,
+            icon: <StackIcon name="python" />,
             level: 65,
             color: "#3776AB"
         }
@@ -34,25 +37,26 @@ const technologies = {
     frameworks: [
         {
             name: "React",
-            icon: <Icons.react />,
+            icon: <StackIcon name="reactjs" />
+            ,
             level: 85,
             color: "#61DAFB"
         },
         {
             name: "Next.js",
-            icon: <Icons.nextjs />,
+            icon: <StackIcon name="nextjs2" />,
             level: 80,
             color: "#000000"
         },
         {
             name: "Node.js",
-            icon: <Icons.nodejs />,
+            icon: <StackIcon name="nodejs" />,
             level: 75,
             color: "#339933"
         },
         {
             name: "Spring Boot",
-            icon: <Icons.springboot />,
+            icon: <StackIcon name="spring" />,
             level: 65,
             color: "#6DB33F"
         }
@@ -60,25 +64,25 @@ const technologies = {
     devops: [
         {
             name: "Docker",
-            icon: <Icons.docker />,
+            icon: <StackIcon name="docker" />,
             level: 70,
             color: "#2496ED"
         },
         {
             name: "Kubernetes",
-            icon: <Icons.kubernetes />,
+            icon: <StackIcon name="kubernetes" />,
             level: 65,
             color: "#326CE5"
         },
         {
             name: "AWS",
-            icon: <Icons.aws />,
+            icon: <StackIcon name="aws" />,
             level: 65,
             color: "#FF9900"
         },
         {
             name: "GitHub",
-            icon: <Icons.github />,
+            icon: <StackIcon name="github" />,
             level: 85,
             color: "#777676"
         }
@@ -86,19 +90,19 @@ const technologies = {
     databases: [
         {
             name: "PostgreSQL",
-            icon: <Icons.postgres />,
+            icon: <StackIcon name="postgresql" />,
             level: 75,
             color: "#4169E1"
         },
         {
             name: "MongoDB",
-            icon: <Icons.mongodb />, // Check if this should be mongodb instead
+            icon: <StackIcon name="mongodb" />, // Check if this should be mongodb instead
             level: 70,
             color: "#47A248"
         },
         {
             name: "Appwrite",
-            icon: <Icons.appwrite />,
+            icon: <StackIcon name="appwrite" />,
             level: 65,
             color: "#ee2e64"
         }
