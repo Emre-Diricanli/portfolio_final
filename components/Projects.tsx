@@ -94,7 +94,7 @@ const projects: Project[] = [
     }
 ];
 
-const Projects2 = () => {
+const Projects = () => {
     const [activeFilter, setActiveFilter] = useState<string>("all");
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
@@ -293,4 +293,4 @@ const Projects2 = () => {
     );
 };
 
-export default Projects2;
+export default Projects;

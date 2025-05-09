@@ -1,5 +1,5 @@
 "use client";
-import React, { memo } from "react";
+import React, { memo, useCallback } from "react";
 import { Ripple } from "@/components/ui/ripple";
 import { motion } from "motion/react";
 
@@ -12,6 +12,19 @@ const fadeInUpVariant = {
 const fadeInVariant = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 }
+};
+
+// Animation for scroll arrow
+const bounceVariant = {
+  initial: { y: 0 },
+  animate: {
+    y: [0, -10, 0],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      repeatType: "loop"
+    }
+  }
 };
 
 // Memoized heading component to prevent unnecessary re-renders
@@ -35,6 +48,68 @@ const Subheading = memo(() => (
   </motion.p>
 ));
 Subheading.displayName = 'Subheading';
+
+// Memoized scroll indicator component
+const ScrollIndicator = memo(() => {
+  const scrollToAbout = useCallback(() => {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  }, []);
+
+  return (
+    <motion.div
+      variants={fadeInVariant}
+      initial="hidden"
+      animate="visible"
+      transition={{ delay: 1.2, duration: 0.8 }}
+      className="absolute bottom-28 left-0 right-0 flex flex-col items-center z-20"
+    >
+      <p className="text-white/60 text-sm mb-2">Scroll to explore</p>
+      <motion.div
+        variants={bounceVariant}
+        initial="initial"
+        animate="animate"
+        onClick={scrollToAbout}
+        className="cursor-pointer"
+      >
+        <div className="flex flex-col items-center">
+          <svg 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-white/80"
+          >
+            <path 
+              d="M12 5V19M12 19L19 12M12 19L5 12" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            />
+          </svg>
+          <svg 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-white/60 mt-1"
+          >
+            <path 
+              d="M12 5V19M12 19L19 12M12 19L5 12" 
+              stroke="currentColor" 
+              strokeWidth="2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+});
+ScrollIndicator.displayName = 'ScrollIndicator';
 
 // Main Hero component
 const Hero = () => {
@@ -60,6 +135,12 @@ const Hero = () => {
           />
         </motion.div>
         
+        {/* Scroll indicator */}
+        <div>
+          <ScrollIndicator />
+
+        </div>
+
         {/* Ripple is expensive, only render it when needed */}
         <Ripple mainCircleOpacity={0.8} mainCircleSize={80} numCircles={10} />
       </div>

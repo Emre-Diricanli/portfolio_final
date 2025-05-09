@@ -1,13 +1,13 @@
 import { lazy, Suspense } from "react";
 import Dock from "@/components/Dock";
 import Hero from "@/components/Hero";
-import About2 from "@/components/About2";
+import About from "@/components/About";
 
 // Lazy load heavy components
-const TechStack2 = lazy(() => import('@/components/TechStack2'));
-const Projects2 = lazy(() => import('@/components/Projects2'));
+const TechStack = lazy(() => import('@/components/TechStack'));
+const Projects = lazy(() => import('@/components/Projects'));
 const Availability = lazy(() => import('@/components/Availability'));
-const Contact2 = lazy(() => import('@/components/Contact2'));
+const Contact = lazy(() => import('@/components/Contact'));
 
 const LoadingFallback = () => (
   <div className="w-full h-64 flex items-center justify-center">
@@ -20,18 +20,18 @@ export default function Home() {
     <main className="z-auto mx-auto">
 
       <Hero />
-      <About2 />
+      <About />
       <Suspense fallback={<LoadingFallback />}>
-        <TechStack2 />
+        <TechStack />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
-        <Projects2 />
+        <Projects />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <Availability />
       </Suspense>
       <Suspense fallback={<LoadingFallback />}>
-        <Contact2 />
+        <Contact />
       </Suspense>
     </main>
   );
